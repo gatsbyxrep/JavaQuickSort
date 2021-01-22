@@ -53,12 +53,7 @@ public class Main
 		Integer[] array = new Integer[arraySize];
 		for(int i = 0; i < array.length; i++)
 		    array[i] = scanner.nextInt();
-		    
-		    
-		 
-		    
 		System.out.println(Arrays.toString(array));
-		
 		quickSort(array, 0, array.length - 1);
 		System.out.println(Arrays.toString(array));
 	}
