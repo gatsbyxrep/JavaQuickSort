@@ -41,14 +41,13 @@ public class Main
         }
         
     }
-	public static void main(String[] args) {
-	    
-	    Scanner scanner = new Scanner(System.in);
-	    System.out.println("Input array size");
-	    int arraySize = scanner.nextInt();
+	public static void main(String[] args) {    
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Input array size");
+		int arraySize = scanner.nextInt();
 		Integer[] array = new Integer[arraySize];
 		for(int i = 0; i < array.length; i++)
-		    array[i] = scanner.nextInt();
+			array[i] = scanner.nextInt();
 		System.out.println(Arrays.toString(array));
 		quickSort(array, 0, array.length - 1);
 		System.out.println(Arrays.toString(array));
