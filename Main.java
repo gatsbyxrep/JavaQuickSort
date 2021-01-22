@@ -5,19 +5,18 @@ import java.lang.Math;
 
 public class Main
 {
-    
-    public static <T> void printArray(T[] array) {
+	public static <T> void printArray(T[] array) {
         for(T element : array)
             System.out.print(element + " ");
     }
-    public static <T extends Comparable<T>> T getMinOfArray(T[] array) {
+	public static <T extends Comparable<T>> T getMinOfArray(T[] array) {
         T min = array[0];
         for(T element : array)
             if(element.compareTo(min) < 0)
                 min = element;
         return min;
     }
-    public static <T extends Comparable<T>> void quickSort(T[] array, int low, int high) {
+	public static <T extends Comparable<T>> void quickSort(T[] array, int low, int high) {
         int left = low;
         int right = high;
         T pivot = array[(high + low) / 2];
